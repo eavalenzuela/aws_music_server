@@ -1,12 +1,9 @@
-variable "aws_region" {
-    default = "us-west-1"
-}
-
-variable "aws_credentials" {
-    default = "~/.aws/credentials"
-}
-
-variable "aws_profile" {
-    default = "default"
-}
-
+aws_region = "us-west-1"
+aws_credentials = "~/.aws/credentials"
+aws_profile = "default"
+aws_public_key = "ssh-rsa blahblahblah localhost"
+aws_az = "us-west-1a"
+music_vol_size_gb = 500
+server_name = "music_server"
+aws_vpc_id = "vpc-xxxxxxxx"
+aws_subnet_id = "subnet-xxxxxxxx"
