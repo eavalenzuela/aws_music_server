@@ -23,5 +23,8 @@ if [ $# -eq 0 ]; then
 fi
 
 if [ -b $1 ]; then
-    printf "You have selected $1 for initialization as the music_storage volume.
+    printf "You have selected $1 for initialization as the music_storage volume."
+else
+    printf "\n$red" "$1 is NOT a valid block device!"
+    exit 1
 fi
